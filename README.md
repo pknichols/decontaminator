@@ -2,6 +2,15 @@
 
 > An automated R script for removing contaminant reads from OTU/ASV tables using microDecon or simple blank subtraction
 
+> [!IMPORTANT]
+> **Preliminary data analysis tool, subject to ongoing development. Results should be interpreted with appropriate caution and validated with statistical rigor.**
+
+## Live Application
+
+Click the image below to launch the interactive NMDS ordination tool:
+
+[![DECONTAMINATOR App](images/decontam.png)](https://blueplanet.shinyapps.io/decontaminator/)
+
 ##  Description
 
 This script provides a command-line/script-based alternative to the Shiny app "DECONTAMINATOR", allowing users to automatically detect and remove contaminant reads from sequencing data. It supports both extraction blanks and PCR negatives (NTCs) and offers two decontamination methods.
@@ -15,6 +24,14 @@ This script provides a command-line/script-based alternative to the Shiny app "D
 - **Metadata preservation** - Automatically reattach taxonomy and metadata columns
 - **Zero-row removal** - Remove OTUs with no reads after decontamination
 - **CSV output** - Ready-to-use decontaminated tables and removed reads logs
+
+## Data Format Requirements
+
+### OTU Table (CSV)
+- First column: OTU IDs (must be unique)
+- Other columns: Samples as column names
+- Values: Numeric counts or abundances
+
 
 ##  Installation
 
