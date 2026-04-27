@@ -7,7 +7,7 @@
 
 ## Live Application
 
-Click the image below to launch the interactive NMDS ordination tool:
+Click the image below to launch the interactive decontamination tool:
 
 [![DECONTAMINATOR App](images/decontam.png)](https://blueplanet.shinyapps.io/decontaminator/)
 
